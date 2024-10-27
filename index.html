@@ -6,63 +6,74 @@
     <title>Desarrollo Académico</title>
     <!-- Iconos de FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px;">
-            <!-- Logo -->
-            <div>
-                <img src="assets/img/logo.png" alt="Logo" style="height: 50px;">
+        <div class="header-container">
+            <div class="logo">
+                <img src="assets/img/logo.png" alt="Logo">
             </div>
-            <!-- Menú -->
             <nav>
-                <ul style="list-style: none; display: flex; gap: 20px; margin: 0; padding: 0;">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="descargas.html">Descargas</a></li>
-                    <li><a href="#"><i class="fas fa-envelope"></i> Contáctanos</a></li>
+                <ul>
+                    <li><a href="index.html" class="nav-button">Inicio</a></li>
+                    <li><a href="descargas.html" class="nav-button">Descargas</a></li>
+                    <li><a href="#" class="nav-button"><i class="fas fa-envelope"></i> </a></li>
                 </ul>
-            </nav>
+            </nav>            
         </div>
     </header>
 
     <!-- Main content -->
     <main>
-        <!-- Título principal -->
-        <h1 style="text-align: center;">Desarrollo Académico</h1>
-
-        <!-- Imagen central con botón -->
-        <div style="text-align: center; margin: 20px 0;">
-            <img src="assets/img/estudiantes.jpg" alt="Estudiantes" style="max-width: 100%; height: auto;">
-            <div style="margin-top: 10px;">
+        <!-- Imagen central con textos y botón alineados a la izquierda -->
+        <div style="position: relative; margin: 20px 0;">
+            <img src="assets/img/estudiantes.png" alt="Estudiantes" style="width: 80%; height: 450px; border-radius: 10px;">
+            <!-- Textos y botón dentro de la imagen, alineados a la izquierda -->
+            <div class="main-text">
+                <h2 style="font-size: 2.5em;">Estudia de manera inteligente, no más duro.</h2>
+                <p style="font-size: 1.5em; text-align: left;">Aprende a aprender: herramientas para el éxito académico.</p>
                 <a href="descargas.html">
-                    <button style="padding: 10px 20px;">Recursos</button>
+                    <button class="blue-button">Recursos</button>
                 </a>
             </div>
         </div>
 
         <!-- Subtítulo Artículos -->
-        <h2 style="text-align: center;">Artículos</h2>
+        <h2 style="text-align: center; color: black;">Artículos</h2>
 
         <!-- Carrusel de artículos -->
-        <section style="display: flex; justify-content: center; gap: 20px; margin: 20px 0;">
+        <section style="display: flex; justify-content: center; gap: 50px; margin: 20px 0;">
             <div style="text-align: center;">
-                <a href="#"><img src="assets/img/articulo1.jpg" alt="Artículo 1" style="width: 150px; height: auto;"></a>
+                <a href="https://www.youtube.com/watch?v=2iGNEak6PE4&t=685s"><img src="assets/img/articulo1.jpg" alt="Artículo 1" class="rounded-img"></a>
                 <h3>Cómo tomar mejores notas</h3>
             </div>
             <div style="text-align: center;">
-                <a href="#"><img src="assets/img/articulo2.jpg" alt="Artículo 2" style="width: 150px; height: auto;"></a>
+                <a href="#"><img src="assets/img/articulo2.jpg" alt="Artículo 2" class="rounded-img"></a>
                 <h3>Guía para la memoria efectiva</h3>
             </div>
             <div style="text-align: center;">
-                <a href="#"><img src="assets/img/articulo3.jpg" alt="Artículo 3" style="width: 150px; height: auto;"></a>
+                <a href="#"><img src="assets/img/articulo3.jpg" alt="Artículo 3" class="rounded-img"></a>
                 <h3>Planificación de estudios</h3>
             </div>
-        </section>
+            <div style="text-align: center;">
+                <a href="#"><img src="assets/img/articulo4.jpg" alt="Artículo 4" class="rounded-img"></a>
+                <h3>Estudio en grupo: pros y contras</h3>
+            </div>
+            <div style="text-align: center;">
+                <a href="#"><img src="assets/img/articulo5.jpg" alt="Artículo 5" class="rounded-img"></a>
+                <h3>Métodos de repaso eficientes</h3>
+            </div>
+            <div style="text-align: center;">
+                <a href="#"><img src="assets/img/articulo6.jpg" alt="Artículo 6" class="rounded-img"></a>
+                <h3>Organización del tiempo de estudio</h3>
+            </div>
+        </section>        
     </main>
 
     <!-- Pie de página -->
-    <footer style="text-align: center; padding: 10px; background-color: #f1f1f1;">
+    <footer>
         <p>&copy; 2024 Desarrollo Académico. Creado por Diego0804d</p>
     </footer>
 </body>
